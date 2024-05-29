@@ -25,5 +25,5 @@ docker build -t spark-anonymizer src/
 
 Run the Container
 
-docker run --rm -v $(pwd)/data:/app/data spark-anonymizer python generate_csv.py
+docker run --rm -v $(pwd)/data:/app/data spark-anonymizer python generate_csv.py 100
 docker run --rm -v $(pwd)/data:/app/data spark-anonymizer python anonymize_data.py
