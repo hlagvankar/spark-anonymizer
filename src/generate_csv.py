@@ -14,5 +14,5 @@ def generate_csv(file_path, num_of_rec):
     df.to_csv(file_path, index=False)
 
 if __name__ == "__main__":
-    number_of_rec = sys.argv[1] if len(sys.argv) > 1 else 100
+    number_of_rec = sys.argv[1] if len(sys.argv) > 1 else 1000
     generate_csv('../data/input.csv', number_of_rec)
